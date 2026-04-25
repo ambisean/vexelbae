@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ | vexelbae</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #f5f5f5; font-family: Helvetica Neue, Arial, sans-serif; color: #111; }
+    .navbar { display: flex; align-items: center; justify-content: center; padding: 14px 40px; border-bottom: 1px solid #ddd; background: #fff; position: sticky; top: 0; z-index: 100; }
+    .navbar-links { display: flex; gap: 28px; list-style: none; }
+    .navbar-links a { text-decoration: none; color: #111; font-size: 14px; font-weight: 500; }
+    .navbar-links a:hover { text-decoration: underline; }
+    .container { max-width: 740px; margin: 0 auto; padding: 48px 40px 60px 40px; background: #fff; }
+    h1 { font-size: 36px; font-weight: 700; margin-bottom: 8px; }
+    .subtitle { font-size: 14px; color: #555; margin-bottom: 32px; }
+    .faq-list { list-style: none; border: 1px solid #ddd; border-radius: 4px; overflow: hidden; }
+    .faq-item { border-bottom: 1px solid #ddd; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-question { width: 100%; background: #ececec; border: none; text-align: left; padding: 16px 20px; font-size: 15px; color: #111; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-family: inherit; }
+    .faq-question:hover { background: #e0e0e0; }
+    .faq-question.open { background: #e0e0e0; }
+    .faq-arrow { font-size: 12px; transition: transform 0.2s; }
+    .faq-question.open .faq-arrow { transform: rotate(180deg); }
+    .faq-answer { display: none; padding: 16px 20px; font-size: 14px; line-height: 1.7; color: #333; background: #fff; }
+    .faq-answer.open { display: block; }
+    .faq-answer ul { margin: 10px 0 10px 20px; }
+    .faq-answer li { margin-bottom: 6px; }
+    footer { text-align: center; padding: 24px; font-size: 12px; color: #888; border-top: 1px solid #eee; background: #fff; }
+    footer a { color: #888; text-decoration: underline; }
+    @media (max-width: 600px) {
+      .container { padding: 32px 16px 40px 16px; }
+      h1 { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="navbar-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Frequently Asked Questions</h1>
+    <p class="subtitle">Click on the questions to open the collapsible content.</p>
+
+    <ul class="faq-list">
+
+      <li class="faq-item">
+        <button class="faq-question">What is a ".png" file? <span class="faq-arrow">&#9660;</span></button>
+        <div class="faq-answer">
+          <p>Technically speaking, .png files are just another file extension for a type of image. It's very similar to a .jpg or .jpeg file, but are able to carry different properties across. When we ask for a .png file for stickers, it's with implication that you have a contour cut image already pre-made by someone. Since pictures are by default some form of square (rectangles are squares), contour cut images would save as a square meaning it would still print and cut as a square. <strong>UNLESS</strong> the picture is saved as a .png file -- which will preserve the transparency around the picture. With a .png file (if contour cut) your picture will print and cut as the contoured shape rather than a square.</p>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-question">I want to try out the stickers. How can I order just 1 or 2 custom stickers? <span class="faq-arrow">&#9660;</span></button>
+        <div class="faq-answer">
+          <p>We no longer offer just 1 or 2 custom sticker orders in efforts to keep costs low and save the environment. Although it may seem ordering just 1 or 2 won't use much materials, the stickers are still being printed and cut from the same amount of paper. For this reason, we've changed the quantities to reflect the most economical for both you as the customer and environmental for the planet -- which will utilize as much of the paper as possible while keeping costs low.</p>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-question">How long do orders take? <span class="faq-arrow">&#9660;</span></button>
+        <div class="faq-answer">
+          <p>Order completion time varies depending on the product and quantity you're getting. However the start of production is entirely contingent upon how soon the artwork is completed. On average:</p>
+          <ul>
+            <li>Cutouts take 1-2 hours depending on complexity.</li>
+            <li>Illustrations take 3-5 hours depending on complexity.</li>
+            <li>Vectors take up to 24 hours depending on complexity.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-question">Why do the print colors look different from the picture I sent you? <span class="faq-arrow">&#9660;</span></button>
+        <div class="faq-answer">
+          <p>Colors the machine can print and colors you see on a monitor are different. Computer monitors can display millions of colors as RGB (Red, Green, Blue). The color laser machine uses a 4-color printing process of CMYK (Cyan, Magenta, Yellow, Black). The machine uses these 4 colors to create as many colors as possible, but may not be able to reproduce the colors on your monitor. Additionally, what we see on a computer monitor is emitted light, while what we see on a printed document is reflected light. Due to this difference, we can't get a 100% accurate match. The paper brightness and smoothness will also affect the colors you see printed on the page.</p>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-question">I don't like how my prints came out / I sent you the wrong file to print. Can I return my prints for a refund or exchange? <span class="faq-arrow">&#9660;</span></button>
+        <div class="faq-answer">
+          <p>Due to the nature of custom products, we can't offer a redo or refund on print issues caused by the customer end of things. If you have a problem with your order, please send photos of the issue and a detailed explanation to <a href="mailto:sean@vexelbae.com">sean@vexelbae.com</a>. Once we can confirm that it's a print defect, we'll be happy to send out replacements.</p>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-question">Why do your stickers have a white border? <span class="faq-arrow">&#9660;</span></button>
+        <div class="faq-answer">
+          <p>Our contour cut stickers usually feature a white border to help the subject stand out from the background. Without a white border around it, the sticker will blend back into the background if you stick it somewhere with similar colors! You can request that your contour cut stickers not have a white border, but it's not recommended if you want to stand out.</p>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-question">Why don't you offer combined shipping? <span class="faq-arrow">&#9660;</span></button>
+        <div class="faq-answer">
+          <p>We do sometimes offer combined shipping, but only for items of the same design. This is to ensure that your products don't get damaged, mixed up, or lost during shipping as well as ensure a lower shipping cost altogether. Believe it or not, shipping everything in one huge box is more expensive than shipping everything individually! And since there are different sized items, they're most likely to shift during transit which can cause damages.</p>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-question">Can I pay you when I see you at an event? <span class="faq-arrow">&#9660;</span></button>
+        <div class="faq-answer">
+          <p>Sure! But your work won't start until payment is received. We know you're good for your money and word, but it's to protect ourselves in case you decide to change your mind on us. :(</p>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-question">Can you show me what _______ will look like before I pay? <span class="faq-arrow">&#9660;</span></button>
+        <div class="faq-answer">
+          <p>Unfortunately, creating and designing your artwork for print is already more than half the battle. Without securing payment first, it would be valuable time lost on our end should you decide to change your mind. Don't worry though, once you're a paying customer, we go over everything you expect out of your purchase and send proofs of how something will look before we send it into print. If there is anything you'd like to change, the proofing process would be the time to let us know.</p>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-question">The tracking shows my package was "Delivered" but I never received anything! <span class="faq-arrow">&#9660;</span></button>
+        <div class="faq-answer">
+          <p>This does happen occasionally. Some possible reasons:</p>
+          <ul>
+            <li>The delivery person marked it as "Delivered" to avoid a late delivery penalty.</li>
+            <li>It was mixed in with your mail and you didn't see it (smaller sticker orders are mailed in a small white hardmailer).</li>
+            <li>The package ran into issues during transit and was returned to sender.</li>
+          </ul>
+          <p><strong>What you can do:</strong></p>
+          <ul>
+            <li>Check your surroundings -- sometimes the delivery person will hide it somewhere inconspicuous.</li>
+            <li>Wait another 24-48 hours in case it was accidentally marked as delivered.</li>
+            <li>Check with the local post office or delivery service with the tracking number.</li>
+            <li>File a claim with the delivery company and ask for reimbursement if they can't confirm delivery.</li>
+            <li>Consider purchasing signature confirmation and insurance on future orders.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-question">What is your Return/Refund policy? <span class="faq-arrow">&#9660;</span></button>
+        <div class="faq-answer">
+          <p>Your order is only eligible for a return or refund if:</p>
+          <ul>
+            <li>Tracking on the package shows no updates and the package is deemed lost in transit.</li>
+            <li>You were sent the wrong item and you refuse a replacement.</li>
+          </ul>
+          <p><em>*Note: To return a product for a refund, please contact us first and receive approval. Due to the nature of custom orders, custom orders cannot be returned for a refund. Buyer must pay for shipping with tracking on returns. Once the return is received, the products must be in resalable condition in order to qualify for a full refund.</em></p>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-question">Do you have any discount codes? <span class="faq-arrow">&#9660;</span></button>
+        <div class="faq-answer">
+          <p>There are a couple that are floating out there.</p>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <button class="faq-question">I see a member page option. Do you offer customer loyalty bonuses? <span class="faq-arrow">&#9660;</span></button>
+        <div class="faq-answer">
+          <p>Yes! If you've been a long time customer or make a lot of orders through us, we do occasionally give out loyalty bonuses for referrals as well as spontaneous gifts just to show our appreciation. We're also open to the idea of brand ambassadors and give you a unique promo code to share with your followers. When followers make purchases with your promo code, you get either a percentage of the sale or points towards a free print product!</p>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+  <footer>
+    <a href="https://www.vexelbae.com/terms-conditions">Terms &amp; Conditions</a>
+    &nbsp;|&nbsp;
+    &copy; 2024 VexelBae. All rights reserved.
+  </footer>
+
+  <script>
+    document.querySelectorAll(".faq-question").forEach(function(btn) {
+      btn.addEventListener("click", function() {
+        var answer = this.nextElementSibling;
+        var isOpen = answer.classList.contains("open");
+        document.querySelectorAll(".faq-answer").forEach(function(a) { a.classList.remove("open"); });
+        document.querySelectorAll(".faq-question").forEach(function(b) { b.classList.remove("open"); });
+        if (!isOpen) {
+          answer.classList.add("open");
+          this.classList.add("open");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
