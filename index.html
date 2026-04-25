@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome Page | vexelbae</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #fff; font-family: Helvetica Neue, Arial, sans-serif; color: #111; }
+    .navbar { display: flex; align-items: center; justify-content: space-between; padding: 14px 40px; border-bottom: 1px solid #eee; position: sticky; top: 0; background: #fff; z-index: 100; }
+    .navbar-links { display: flex; gap: 28px; list-style: none; }
+    .navbar-links a { text-decoration: none; color: #111; font-size: 14px; font-weight: 500; }
+    .navbar-links a:hover { text-decoration: underline; }
+    .navbar-cart { font-size: 14px; color: #111; text-decoration: none; }
+    .hero-header { display: flex; align-items: flex-start; justify-content: space-between; padding: 36px 40px 20px 40px; max-width: 740px; margin: 0 auto; }
+    .hero-text h1 { font-size: 52px; font-weight: 400; line-height: 1; }
+    .hero-text p { font-size: 16px; color: #333; margin-top: 10px; }
+    .hero-socials { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+    .custom-anime-label { font-size: 13px; font-style: italic; color: #222; font-family: cursive; }
+    .social-icons { display: flex; gap: 8px; }
+    .social-icons a img { width: 39px; height: 39px; border-radius: 50%; }
+    .cards { max-width: 740px; margin: 0 auto; padding: 0 40px 60px 40px; display: flex; flex-direction: column; gap: 14px; }
+    .card { display: block; width: 100%; transition: opacity 0.2s; }
+    .card:hover { opacity: 0.92; }
+    .card img { width: 100%; height: auto; display: block; }
+    footer { text-align: center; padding: 24px; font-size: 12px; color: #888; border-top: 1px solid #eee; }
+    footer a { color: #888; text-decoration: underline; }
+    @media (max-width: 600px) {
+      .hero-header { flex-direction: column; gap: 16px; padding: 24px 20px 10px 20px; }
+      .hero-text h1 { font-size: 38px; }
+      .cards { padding: 0 20px 40px 20px; }
+      .navbar { padding: 12px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="navbar-links">
+      <li><a href="https://www.vexelbae.com/waifus">VexelBae Waifus</a></li>
+      <li><a href="https://www.vexelbae.com/frequently-asked-questions">FAQ</a></li>
+      <li><a href="https://www.vexelbae.com/accounts">Accounts &amp; Services</a></li>
+    </ul>
+    <a class="navbar-cart" href="https://www.vexelbae.com/cart">Cart</a>
+  </nav>
+  <header class="hero-header">
+    <div class="hero-text">
+      <h1>Welcome!</h1>
+      <p>What would you like to do?</p>
+    </div>
+    <div class="hero-socials">
+      <div class="custom-anime-label">custom anime art</div>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/vexelbae_" target="_blank" rel="noopener">
+          <img src="https://static.wixstatic.com/media/e1aa082f7c0747168d9cf43e77046142.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e1aa082f7c0747168d9cf43e77046142.png" alt="Instagram" />
+        </a>
+        <a href="https://www.facebook.com/vexelbae" target="_blank" rel="noopener">
+          <img src="https://static.wixstatic.com/media/4057345bcf57474b96976284050c00df.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4057345bcf57474b96976284050c00df.png" alt="Facebook" />
+        </a>
+        <a href="https://x.com/vexelbae" target="_blank" rel="noopener">
+          <img src="https://static.wixstatic.com/media/870f97661ed14a5bb2d96ecbddec0aed.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/870f97661ed14a5bb2d96ecbddec0aed.png" alt="Twitter" />
+        </a>
+      </div>
+    </div>
+  </header>
+  <main class="cards">
+    <a class="card" href="https://www.instagram.com/mistermajestic" target="_blank" rel="noopener">
+      <img src="https://static.wixstatic.com/media/1e9853_15910039c37746d8ac59ee84af0b50f7~mv2.jpg/v1/crop/x_267,y_0,w_4795,h_1216/fill/w_708,h_172,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/MQP06908-ev%20copy.jpg" alt="Photography" />
+    </a>
+    <a class="card" href="https://www.vexelbae.com/waifus" target="_blank" rel="noopener">
+      <img src="https://static.wixstatic.com/media/1e9853_e77b5e0446e04433a08a754c2001e4d6~mv2.png/v1/fill/w_708,h_212,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/vb%20homepage%20image2.png" alt="Browse Vexelbae Anime Waifus" />
+    </a>
+    <a class="card" href="http://qualityprintco.com" target="_blank" rel="noopener">
+      <img src="https://static.wixstatic.com/media/1e9853_1f53d2990fbb470db3b0f52cd37f48b5~mv2.jpg/v1/fill/w_708,h_212,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/vb%20homepage%20image%202.jpg" alt="Custom Prints" />
+    </a>
+    <a class="card" href="https://ambisean.quickconnect.to/sharing/kgMDG9Tx8" target="_blank" rel="noopener">
+      <img src="https://static.wixstatic.com/media/1e9853_7b48c022d2ea42cab9e0db9da4f4ee79~mv2.jpg/v1/fill/w_708,h_103,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/A%20plain%20spiral-bound%20sketchbook%20with%20a%20p.jpg" alt="Upload Files" />
+    </a>
+  </main>
+  <footer>
+    <a href="https://www.vexelbae.com/terms-conditions">Terms &amp; Conditions</a>
+    &nbsp;|&nbsp;
+    &copy; 2024 VexelBae. All rights reserved.
+  </footer>
+</body>
+</html>
